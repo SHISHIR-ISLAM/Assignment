@@ -1,3 +1,98 @@
-body {
-    font-size: 15pt;
+:root{
+   --color-primary : #DF1717;
+   --color-accent : #FFC000;
+   --color-secondary : #D91AFF;
+   --color-card_one : #35B8C5;
+   --color-card_three : #A1ABEF;
+   --color-card_two : #FFB5B5;
+}
+
+
+*,*::after,*::before{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+
+html{
+   font-size: 62.5%;
+}
+
+
+body{
+    font-family: 'Lora', serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+/******Button******/
+
+.btn{
+   padding: 0.8rem 2rem;
+   border: 0;
+   margin: 2rem 0;
+   border-radius: 5px;
+}
+
+.btn_primary{
+   background: var(--color-primary);
+   color: #fff;
+}
+
+
+
+/********Heading ******/
+
+h1,h2,h3{
+   margin-bottom: 2.3rem;
+}
+
+
+h1{
+   font-size: 3.4rem;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 2.7rem;
+}
+
+
+@media screen and (min-width: 768px) {
+   h1{
+      font-size: 4.5rem;
+   }
+   
+   h2{
+      font-size: 3.8rem;
+   }
+   
+   h3{
+      font-size: 3.5rem;
+   }
+}
+
+
+/*********Grid********/
+
+.grid{
+   display: grid;
+}
+
+@media screen and (min-width: 650px) {
+   .grid__1x2{
+      grid-template-columns: 1fr 1fr;
+   }
+}
+
+
+@media screen and (min-width: 1024px){
+   .grid__1x3{
+      grid-template-columns: repeat(3, 1fr);
+   }
 }
